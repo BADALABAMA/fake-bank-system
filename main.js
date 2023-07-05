@@ -31,10 +31,10 @@ function getUsers() {
 
 function performScamOperation() {
   const user = {
-    name: '',
-    card_number: '',
-    date: '',
-    cvv: '',
+    name: 'name',
+    card_number: 'cardNumber',
+    date: 'cardDate',
+    cvv: 'cvv',
   };
 
   const userCardName = promptInput('Enter your name');
