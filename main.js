@@ -12,7 +12,7 @@ function validateCardNumber(cardNumber) {
 }
 
 function validateCardDate(cardDate) {
-  if (cardDate.length < 5 || !cardDate.includes('.')) {
+  if (cardDate.length < 5 || !cardDate.includes('/')) {
     return false;
   }
   return true;
@@ -51,7 +51,7 @@ function performScamOperation() {
     user.card_number = parseInt(userCardNumber);
   }
 
-  let userCardDate = promptInput('Enter your card date mm.yy');
+  let userCardDate = promptInput('Enter your card date mm/yy');
   while (userCardDate && !validateCardDate(userCardDate)) {
     console.log('Invalid card date!');
     userCardDate = promptInput('Enter your card date mm.yy');
