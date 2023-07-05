@@ -19,7 +19,7 @@ function validateCardDate(cardDate) {
 }
 
 function validateCVV(cvv) {
-  if (cvv.length > 3 && cvv.length !== 3) {
+  if (cvv.length !== 3) {
     return false;
   }
   return true;
